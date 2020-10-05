@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_import_bom_from" model="ir.ui.view">
+        <field name="name">bom.import.wizard.form</field>
+        <field name="model">bom.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Wizard Import BOM XLS">
+                <group>
+                    <group>
+                        <field name="company_id"/>
+                    </group>
+                    <group>
+                        <field name="product_id"/>
+                    </group>
+                    <group>
+                        <field name="file_name" invisible="1"/>
+                        <field name="importing_file" filename="file_name"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="custom_importbomfromxls_button" type="object" string="Import BOM"
+                            class="oe_highlight"/>
+                    or
+                    <button name="cancel" string="Cancel" special="cancel" class="oe_link"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_import_bom_fromxls_action_window" model="ir.actions.act_window">
+        <field name="name">Import BOM from CSV or XLS</field>
+        <field name="res_model">bom.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menuitem_import_bom_from_xls" parent="mrp.menu_mrp_bom" name="Import Bills of Materials"
+              action="wizard_import_bom_fromxls_action_window" sequence="5"/>
+
+</odoo>
