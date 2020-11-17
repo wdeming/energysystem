@@ -1,0 +1,7 @@
+BOM ID,PRODUCT,PRODUCT VARIANT,QUANTITY,ROUTING,REFERENCE,BOM TYPE,SEQUENCE,MANUFACTURING READINESS,OPERATION,COMPONENT
+BOM-001,Large Desk,E-COM09,10,MANUAL COMPONENT’S ASSEMBLY,SEC-ASSEMV1,normal,2,asap,Manufacturing,Large Cabinet
+BOM-001,,,10,,,,,,,Customizable Desk (CONFIG)
+BOM-001,,,10,,,,,,,Customizable Desk (CONFIG)
+BOM-002,Large Cabinet,E-COM07,2,ASSEMBLE FURNITURE,SEC-ASSEMV2,normal,3,all_available,Manufacturing,Customizable Desk (CONFIG)
+BOM-002,,,2,,,,,,,Customizable Desk (CONFIG)
+BOM-002,,,2,,,,,,,Bolt
